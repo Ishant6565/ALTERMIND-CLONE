@@ -1,16 +1,27 @@
-Toolspea Website Clone archive
-Source: https://www.altermind.studio/
-Mode: entire
-Captured: 2026-09-24T17:05:57.970Z
-Pages: 4 · Assets: 78 · Size: 10.4 MB
+Altermind Studio Interactive Clone
 
-How to open: unzip the archive and open index.html in any browser.
-Internal links between downloaded pages are rewritten to relative paths, so you can browse offline.
+An offline-preserved interactive clone of https://www.altermind.studio/ with the original Nuxt runtime, animations, loader, cursor behavior, responsive layout, Three.js assets, and captured internal pages.
 
-Known limitations:
-- Server-dependent features (forms, search, login, checkout, comments) only work on the live site.
-- Content rendered by JavaScript after page load may be missing.
-- Pages behind authentication, paywalls or bot protection are never downloaded.
-- Only assets you enabled in the options were fetched; see assets.csv for anything skipped.
+## Run locally
 
-Rights: the archived content stays the copyright of its owner. You are responsible for how you use it.
+```bash
+python -m http.server 4173
+```
+
+Open http://localhost:4173/ in a browser. The captured internal pages are available at `/impact/`, `/join-our-team/`, and `/privacy-policy/`.
+
+## Included
+
+- Original JavaScript bundles and CSS assets
+- Loader and click-to-start interaction
+- Recovered GLB, texture, font, Basis, and Draco assets
+- Desktop and mobile responsive layouts
+- Offline HTML captures and route payloads
+
+## Project tags
+
+`altermind` `website-clone` `interactive-website` `nuxt` `threejs` `webgl` `javascript` `offline-archive` `responsive-design`
+
+## Notes
+
+This repository is an educational local archive. Forms, analytics, and other server-dependent features remain tied to the original site. The original website and its assets remain the property of their respective owner.
